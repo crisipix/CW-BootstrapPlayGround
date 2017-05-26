@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+<style>
+
+
+/* entypo 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}*/
+a { 
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#popout {
+   left: 0;
+   position: fixed;
+   top: 150px;
+   margin-left:100px;
+}
+#popout a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#popout a span {
+   line-height: 35px;
+   left: -1200px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#popout a:hover span {
+   left: 100%;
+}
+#popout a[class*="facebook"],
+#popout a[class*="facebook"]:hover,
+#popout a[class*="facebook"] span { background: #3b5998; }
+
+#popout a[class*="twitter"],
+#popout a[class*="twitter"]:hover,
+#popout a[class*="twitter"] span { background: #00aced; }
+
+</style>
+	<aside id="popout">
+    <ul>
+        <li><a href="#" class="facebook" target="_blank"><span>Facebook</span></a></li>
+        <li><a href="#" class="twitter" target="_blank"><span>Twitter</span></a></li>
+    </ul>
+</aside>
+</body>
+</html>
+
+<!-- ul – Here will set the list-style to none to remove bullets.
+#popout – This rule will set the position to fixed, display the sidebar on the left and 150px from the top of the page.
+#popout a – This is where we style the individual social media site buttons, we have set the width, height and color.
+#popout a span – This rule will position the <span> with the name of the social media site off screen until we hover over our button.
+#popout a:hover span – Only one property here, but very important, when we hover over our buttons, the <span> with the text of the site will display.
+#popout a[class*=”facebook”] etc – The remainder of the code displays the background color for each individual social media site, it sets the color for the button, when hovering and the <span>. -->
